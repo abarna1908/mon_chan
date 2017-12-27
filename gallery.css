@@ -1,0 +1,103 @@
+.masonry-column img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    filter: grayscale(50%);
+}
+.masonry-column{
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+.container img:hover{
+    filter: grayscale(0%);
+}
+.masonry-grid{
+    margin: 0 auto;
+}
+.gallery-section{
+    height: 120vh;
+    width: 100%;
+}
+.h1-40{
+    height: 40vh;
+}
+.h1-35{
+    height: 35vh;
+}
+.h1-45{
+    height: 45vh;
+}
+.h1-30{
+    height: 30vh;
+}
+.h1-50{
+    height: 50vh;
+}
+.h1-25{
+    height: 25vh;
+}
+.masonry-column {
+  padding: 0 1px;
+}
+.masonry-column > div {
+    margin-bottom: 5px;
+}
+.masonry-grid > div {
+  margin: 3px;
+}
+.modal{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.close{
+    float: right;
+    color: white;
+    text-align: right;
+}
+.carousel-item{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+.carousel-item img{
+    margin: 0 auto;
+    height: 70vh;
+    width: 100%;
+    display: inline-block;
+}
+#my-modal{
+    z-index: 1;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+.modal-content{
+    position: relative;
+    background-color: black;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .gallery-section{
+        height: 360vh;
+    }
+    .masonry-column{
+        height: 27%;
+        width: 60%;
+    }
+    .masonry-grid > div{
+       margin: 0 auto !important;
+    }
+}

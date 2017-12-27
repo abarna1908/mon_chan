@@ -1,0 +1,68 @@
+.story-img{
+    width: 100%;
+    height: 50vh;
+}
+.story-container{
+    margin: 0 auto;
+}
+.story-container div{
+    margin: 20px;
+}
+.head-text{
+    font-family: 'Lobster Two', cursive;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.story-container div h3{
+    color: rgba(240,128,128,1);
+    font-weight: bold;
+}
+.left-img, .right-img{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+/* The circles on the timeline */
+.left-img::after, .right-img::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/heart.svg");
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.left-img::after{
+    right: -35px;    
+}
+.right-img::before{
+    left: -35px;
+}
+#timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+#timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+@media screen and (max-width: 768px) {
+    #timeline::before {
+        width: 0;
+    }
+    .left-img::after, .right-img::before{
+         background-image: none;
+    }
+}
